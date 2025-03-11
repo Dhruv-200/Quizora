@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="student-body">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>{{ quiz.title }}</h1>
+            <a href="{{ url_for('student') }}" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </a>
+        </div>
+
+        <form id="quiz-form" class="quiz-form">
+            {% for question in quiz.questions %}
+            <div class="question">
+                <h3>Question {{ loop.index }}</h3>
+                <p>{{ question.text }}</p>
+                <div class="options-container">
+                    {% for option in question.options %}
+                    <div class="form-group">
+                        <input type="radio" id="question-{{ question.id }}-option-{{ loop.index }}" 
+                               name="question-{{ question.id }}" value="{{ option.id }}" required>
+                        <label for="question-{{ question.id }}-option-{{ loop.index }}">{{ option.text }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary">Submit Quiz</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='take_quiz.js') }}"></script>
+</body>
+</html>

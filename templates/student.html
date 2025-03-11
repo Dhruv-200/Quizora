@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="student-body">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Student Dashboard</h1>
+            <a href="/logout" class="btn btn-outline">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-book-open"></i> My Courses</h2>
+                    <p>View your enrolled courses</p>
+                </div>
+                <div class="card-content">
+                    <p>Access your course materials, assignments, and lectures for all enrolled classes.</p>
+                    <button class="btn btn-secondary">View Courses</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-file-alt"></i> Assignments</h2>
+                    <p>Manage your assignments</p>
+                </div>
+                <div class="card-content">
+                    <p>View upcoming assignments, submit your work, and check grades and feedback.</p>
+                    <button class="btn btn-secondary">View Assignments</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Grades</h2>
+                    <p>Check your academic performance</p>
+                </div>
+                <div class="card-content">
+                    <p>View your grades for all courses, track your GPA, and monitor your academic progress.</p>
+                    <button class="btn btn-secondary">View Grades</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-calendar"></i> Schedule</h2>
+                    <p>View your class schedule</p>
+                </div>
+                <div class="card-content">
+                    <p>Check your weekly class schedule, exam dates, and important academic deadlines.</p>
+                    <button class="btn btn-secondary">View Schedule</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-clock"></i> Upcoming Events</h2>
+                    <p>Stay updated with events</p>
+                </div>
+                <div class="card-content">
+                    <p>View upcoming campus events, workshops, and extracurricular activities.</p>
+                    <button class="btn btn-secondary">View Events</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-question-circle"></i> Take Quiz</h2>
+                    <p>Attempt available quizzes</p>
+                </div>
+                <div class="card-content">
+                    <p>Take quizzes created by your teachers and test your knowledge.</p>
+                    <a href="{{ url_for('available_quizzes') }}" class="btn btn-secondary">View Quizzes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-message">
+            <h2>Welcome to the Student Dashboard</h2>
+            <p>
+                This is your student portal where you can access all your academic information,
+                course materials, and campus resources. Use the cards above to navigate to different sections.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
