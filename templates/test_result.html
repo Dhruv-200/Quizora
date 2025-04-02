@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Test Result{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Test Result</h3>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4>{{ result.test_name }}</h4>
+                    <p class="text-muted">Subject: {{ result.subject_name }}</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h4>Score: {{ result.total_score }}/{{ result.total_marks }}</h4>
+                    <p class="text-muted">Percentage: {{ "%.1f"|format(result.percentage) }}%</p>
+                </div>
+            </div>
+
+            <div class="progress mb-4">
+                <div class="progress-bar {% if result.percentage >= result.passing_percentage %}bg-success{% else %}bg-danger{% endif %}" 
+                     role="progressbar" 
+                     style="width: {{ result.percentage }}%"
+                     aria-valuenow="{{ result.percentage }}" 
+                     aria-valuemin="0" 
+                     aria-valuemax="100">
+                    {{ "%.1f"|format(result.percentage) }}%
+                </div>
+            </div>
+
+            <div class="alert {% if result.percentage >= result.passing_percentage %}alert-success{% else %}alert-danger{% endif %}">
+                <h5 class="alert-heading">
+                    {% if result.percentage >= result.passing_percentage %}
+                        Congratulations! You passed the test!
+                    {% else %}
+                        You did not pass the test. Keep practicing!
+                    {% endif %}
+                </h5>
+                <p class="mb-0">
+                    Passing percentage required: {{ result.passing_percentage }}%
+                </p>
+            </div>
+
+            <h5 class="mt-4">Question-wise Analysis</h5>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Your Answer</th>
+                            <th>Correct Answer</th>
+                            <th>Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for question in result.question_results %}
+                        <tr>
+                            <td>{{ question.question_text }}</td>
+                            <td>{{ question.selected_answer }}</td>
+                            <td>{{ question.correct_answer }}</td>
+                            <td>{{ question.marks }}/{{ question.total_marks }}</td>
+                            <td>
+                                {% if question.is_correct %}
+                                <span class="badge bg-success">Correct</span>
+                                {% else %}
+                                <span class="badge bg-danger">Incorrect</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% if question.explanation %}
+                        <tr>
+                            <td colspan="5">
+                                <div class="alert alert-info mb-0">
+                                    <strong>Explanation:</strong> {{ question.explanation }}
+                                </div>
+                            </td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-4">
+                <a href="{{ url_for('student') }}" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Back to Dashboard
+                </a>
+                <a href="{{ url_for('download_certificate', test_id=result.test_id) }}" class="btn btn-success">
+                    <i class="fas fa-certificate"></i> Download Certificate
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
