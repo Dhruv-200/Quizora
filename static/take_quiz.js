@@ -5,7 +5,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
     const unansweredQuestions = [];
     const questions = document.querySelectorAll('.question');
     questions.forEach((question, index) => {
-        const questionId = question.dataset.questionId;
+        // Removed unused variable 'questionId'
         const answered = question.querySelector('input[type="radio"]:checked');
         if (!answered) {
             unansweredQuestions.push(index + 1);
@@ -36,7 +36,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
     .then(data => {
         if (data.success) {
             alert('Quiz submitted successfully!');
-            window.location.href = '/student_history';
+            displayResults(data.results); // Pass the results to displayResults
         } else {
             alert(data.error || 'Error submitting quiz. Please try again.');
         }
