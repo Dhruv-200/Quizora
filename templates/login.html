@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Login - Quiz System{% endblock %}
+{% block title %}Login - Quizora{% endblock %}
 
 {% block content %}
     <div class="login-container">
@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title text-center mb-4">
-                        <i class="fas fa-graduation-cap me-2"></i>Quiz System
+                        <i class="fas fa-graduation-cap me-2"></i>Quizora
                     </h3>
                     
                     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -41,7 +41,7 @@
                             <div class="input-group">
                                 <input type="password" class="form-control" name="password" required 
                                        placeholder="Enter your password" minlength="6">
-                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword" title="Toggle password visibility">
                                     <i class="fas fa-eye"></i>
                                 </button>
                             </div>
@@ -53,7 +53,7 @@
                             <label class="form-label">
                                 <i class="fas fa-user-shield me-2"></i>Role
                             </label>
-                            <select class="form-control" name="role" required>
+                            <select class="form-control" name="role" required title="Select your role">
                                 <option value="">Select your role</option>
                                 <option value="student">Student</option>
                                 <option value="admin">Admin</option>
