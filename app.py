@@ -32,6 +32,15 @@ app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=2)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
+def generate_csrf_token() -> str:
+    """Generate a new CSRF token."""
+    if 'csrf_token' not in session:
+        session['csrf_token'] = secrets.token_urlsafe(32)
+    return session['csrf_token']
+
+# Register csrf_token function with Jinja2
+app.jinja_env.globals['csrf_token'] = generate_csrf_token
+
 # Rate limiting configuration
 RATE_LIMIT = {
     'login': {'max_attempts': 5, 'window': 300},  # 5 attempts per 5 minutes
@@ -102,12 +111,6 @@ def validate_password(password: str) -> bool:
 def sanitize_input(text: str) -> str:
     """Sanitize user input to prevent XSS."""
     return re.sub(r'<[^>]+>', '', text)
-
-def generate_csrf_token() -> str:
-    """Generate a new CSRF token."""
-    if 'csrf_token' not in session:
-        session['csrf_token'] = secrets.token_urlsafe(32)
-    return session['csrf_token']
 
 def validate_csrf_token(token: str) -> bool:
     """Validate the provided CSRF token."""
@@ -707,6 +710,20 @@ def take_test(test_id):
                 flash('You have already taken this test', 'warning')
                 return redirect(url_for('student'))
             
+            # Check for any abandoned attempts
+            c.execute("""
+                SELECT attempt_id, start_time 
+                FROM test_attempts 
+                WHERE student_id = ? AND test_id = ? AND status = 'abandoned'
+                ORDER BY start_time DESC LIMIT 1
+            """, (session['student_id'], test_id))
+            abandoned_attempt = c.fetchone()
+            
+            if abandoned_attempt:
+                # Delete abandoned attempt
+                c.execute("DELETE FROM test_attempts WHERE attempt_id = ?", (abandoned_attempt['attempt_id'],))
+                conn.commit()
+            
             # Check if there's an active attempt
             c.execute("""
                 SELECT attempt_id, start_time 
@@ -728,12 +745,41 @@ def take_test(test_id):
                         SET status = 'abandoned', end_time = datetime('now')
                         WHERE attempt_id = ?
                     """, (active_attempt['attempt_id'],))
+                    conn.commit()
+                    flash('Previous attempt has expired. Starting a new attempt.', 'warning')
                 else:
                     # Resume the attempt
+                    time_remaining = test['time_limit'] * 60 - time_elapsed
+                    
+                    # Get questions and options
+                    c.execute("""
+                        SELECT q.question_id, q.question_text, q.marks, q.explanation,
+                               o.option_id, o.option_text
+                        FROM questions q
+                        JOIN options o ON q.question_id = o.question_id
+                        WHERE q.test_id = ?
+                        ORDER BY q.question_id
+                    """, (test_id,))
+                    questions_data = c.fetchall()
+                    
+                    # Organize questions and options
+                    questions = {}
+                    for row in questions_data:
+                        q_id, q_text, marks, explanation, o_id, o_text = row
+                        if q_id not in questions:
+                            questions[q_id] = {
+                                'text': q_text,
+                                'marks': marks,
+                                'explanation': explanation,
+                                'options': []
+                            }
+                        questions[q_id]['options'].append({'id': o_id, 'text': o_text})
+                    
                     return render_template('take_test.html', 
                                          test=test, 
+                                         questions=questions,
                                          attempt_id=active_attempt['attempt_id'],
-                                         time_remaining=test['time_limit'] * 60 - time_elapsed)
+                                         time_remaining=time_remaining)
             
             # Create new attempt
             c.execute("""
@@ -741,6 +787,7 @@ def take_test(test_id):
                 VALUES (?, ?, datetime('now'), 'in_progress')
             """, (session['student_id'], test_id))
             attempt_id = c.lastrowid
+            conn.commit()
             
             # Get questions and options
             c.execute("""
@@ -781,10 +828,12 @@ def take_test(test_id):
 @student_required
 def submit_test(test_id):
     if rate_limit('test_submission'):
+        logger.warning(f"Rate limit exceeded for test submission - Test ID: {test_id}, Student ID: {session.get('student_id')}")
         flash('Too many submission attempts. Please try again later.', 'danger')
         return redirect(url_for('student'))
     
     if not validate_csrf_token(request.form.get('csrf_token')):
+        logger.warning(f"Invalid CSRF token for test submission - Test ID: {test_id}, Student ID: {session.get('student_id')}")
         flash('Invalid request', 'danger')
         return redirect(url_for('student'))
     
@@ -794,7 +843,7 @@ def submit_test(test_id):
             
             # Get test details
             c.execute("""
-                SELECT t.test_name, t.total_marks, t.passing_percentage, s.subject_name
+                SELECT t.test_name, t.total_marks, t.passing_percentage, s.subject_name, t.time_limit
                 FROM tests t
                 JOIN subjects s ON t.subject_id = s.subject_id
                 WHERE t.test_id = ? AND t.is_active = 1
@@ -802,15 +851,18 @@ def submit_test(test_id):
             test_info = c.fetchone()
             
             if not test_info:
+                logger.warning(f"Test not found or inactive - Test ID: {test_id}")
                 flash('Test not found or is inactive', 'danger')
                 return redirect(url_for('student'))
             
             # Verify attempt
             attempt_id = request.form.get('attempt_id')
             if not attempt_id:
+                logger.warning(f"Missing attempt ID for test submission - Test ID: {test_id}, Student ID: {session.get('student_id')}")
                 flash('Invalid test attempt', 'danger')
                 return redirect(url_for('student'))
             
+            # Get attempt details
             c.execute("""
                 SELECT start_time, status
                 FROM test_attempts
@@ -818,17 +870,25 @@ def submit_test(test_id):
             """, (attempt_id, session['student_id'], test_id))
             attempt = c.fetchone()
             
-            if not attempt or attempt['status'] != 'in_progress':
+            if not attempt:
+                logger.warning(f"Attempt not found - Attempt ID: {attempt_id}, Test ID: {test_id}, Student ID: {session.get('student_id')}")
                 flash('Invalid test attempt', 'danger')
+                return redirect(url_for('student'))
+            
+            # Check if attempt is already completed
+            if attempt['status'] == 'completed':
+                logger.warning(f"Attempt already completed - Attempt ID: {attempt_id}, Test ID: {test_id}, Student ID: {session.get('student_id')}")
+                flash('This test has already been submitted', 'warning')
                 return redirect(url_for('student'))
             
             # Check time limit
             start_time = datetime.strptime(attempt['start_time'], '%Y-%m-%d %H:%M:%S')
             time_taken = (datetime.now() - start_time).total_seconds()
+            time_exceeded = time_taken > test_info['time_limit'] * 60
             
-            if time_taken > test_info['time_limit'] * 60:
-                flash('Test time limit exceeded', 'danger')
-                return redirect(url_for('student'))
+            if time_exceeded:
+                logger.warning(f"Time limit exceeded - Test ID: {test_id}, Student ID: {session.get('student_id')}")
+                flash('Test time limit exceeded, but your answers will still be processed', 'warning')
             
             total_score = 0
             question_results = []
@@ -836,6 +896,7 @@ def submit_test(test_id):
             # Process answers
             answers = request.form
             if not answers:
+                logger.warning(f"No answers submitted - Test ID: {test_id}, Student ID: {session.get('student_id')}")
                 flash('No answers submitted', 'danger')
                 return redirect(url_for('take_test', test_id=test_id))
             
@@ -848,6 +909,7 @@ def submit_test(test_id):
                     question_id = int(question_id.split('-')[1])
                     selected_option_id = int(selected_option_id)
                 except ValueError:
+                    logger.warning(f"Invalid question or option ID format - Test ID: {test_id}, Question ID: {question_id}")
                     continue
                     
                 # Get question details including the correct option
@@ -868,6 +930,7 @@ def submit_test(test_id):
                 question_data = c.fetchone()
                 
                 if not question_data:
+                    logger.warning(f"Question data not found - Question ID: {question_id}, Test ID: {test_id}")
                     continue
                     
                 question_text, marks, explanation, correct_option_id, selected_answer, correct_answer = question_data
@@ -910,7 +973,7 @@ def submit_test(test_id):
             conn.commit()
             
             # Store result data in session for the result page
-            session['last_test_result'] = {
+            result_data = {
                 'test_name': test_info['test_name'],
                 'subject_name': test_info['subject_name'],
                 'total_score': total_score,
@@ -919,8 +982,18 @@ def submit_test(test_id):
                 'passing_percentage': test_info['passing_percentage'],
                 'question_results': question_results,
                 'test_id': test_id,
-                'time_taken': time_taken
+                'time_taken': time_taken,
+                'attempt_date': datetime.now().strftime('%B %d, %Y %H:%M:%S')
             }
+            
+            logger.info(f"Test submitted successfully - Test ID: {test_id}, Student ID: {session['student_id']}, Score: {total_score}/{test_info['total_marks']}")
+            session['last_test_result'] = result_data
+            
+            # Verify session data was stored
+            if 'last_test_result' not in session:
+                logger.error(f"Failed to store result in session - Test ID: {test_id}, Student ID: {session['student_id']}")
+                flash('Error saving test result. Please try again.', 'danger')
+                return redirect(url_for('student'))
             
             return redirect(url_for('show_test_result'))
             
@@ -932,12 +1005,19 @@ def submit_test(test_id):
 @app.route('/test_result')
 @student_required
 def show_test_result():
-    result = session.get('last_test_result')
-    if not result:
-        flash('No test result found. Please take a test first.', 'warning')
+    try:
+        result = session.get('last_test_result')
+        if not result:
+            logger.warning(f"No test result found in session for student {session.get('student_id')}")
+            flash('No test result found. Please take a test first.', 'warning')
+            return redirect(url_for('student'))
+        
+        logger.info(f"Displaying test result for student {session.get('student_id')} - Test: {result.get('test_name')}")
+        return render_template('test_result.html', result=result)
+    except Exception as e:
+        logger.error(f"Error displaying test result: {e}")
+        flash('Error displaying test result. Please try again.', 'danger')
         return redirect(url_for('student'))
-    
-    return render_template('test_result.html', result=result)
 
 @app.route('/view_results')
 @admin_required
@@ -1139,28 +1219,37 @@ def download_certificate(test_id):
             title_style = ParagraphStyle(
                 'CustomTitle',
                 parent=styles['Heading1'],
-                fontSize=24,
-                spaceAfter=30,
-                alignment=1  # Center alignment
+                fontSize=28,
+                spaceAfter=40,
+                alignment=1,  # Center alignment
+                textColor=colors.HexColor('#2C3E50')
             )
             
             content_style = ParagraphStyle(
                 'CustomContent',
                 parent=styles['Normal'],
-                fontSize=14,
+                fontSize=16,
                 spaceAfter=20,
-                alignment=1  # Center alignment
+                alignment=1,  # Center alignment
+                textColor=colors.HexColor('#34495E')
             )
             
             # Create certificate content
             story = []
             
+            # Add decorative border
+            story.append(Spacer(1, 30))
+            
             # Add title
             story.append(Paragraph("Certificate of Achievement", title_style))
+            story.append(Spacer(1, 20))
+            
+            # Add decorative line
+            story.append(Paragraph("<hr/>", content_style))
             story.append(Spacer(1, 30))
             
             # Add content
-            story.append(Paragraph(f"This is to certify that", content_style))
+            story.append(Paragraph("This is to certify that", content_style))
             story.append(Paragraph(f"<b>{result['student_name']}</b>", content_style))
             story.append(Paragraph("has successfully completed the test", content_style))
             story.append(Paragraph(f"<b>{result['test_name']}</b>", content_style))
@@ -1168,6 +1257,22 @@ def download_certificate(test_id):
             story.append(Paragraph(f"with a score of <b>{result['marks_obtained']}/{result['total_marks']}</b>", content_style))
             story.append(Paragraph(f"(<b>{result['percentage']:.1f}%</b>)", content_style))
             story.append(Paragraph(f"on {result['attempt_date']}", content_style))
+            
+            # Add decorative line
+            story.append(Spacer(1, 30))
+            story.append(Paragraph("<hr/>", content_style))
+            
+            # Add footer
+            footer_style = ParagraphStyle(
+                'CustomFooter',
+                parent=styles['Normal'],
+                fontSize=12,
+                spaceBefore=20,
+                alignment=1,
+                textColor=colors.HexColor('#7F8C8D')
+            )
+            story.append(Paragraph("Quizora - Online Quiz Platform", footer_style))
+            story.append(Paragraph("Certificate ID: " + secrets.token_urlsafe(8), footer_style))
             
             # Build PDF
             doc.build(story)

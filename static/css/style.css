@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #B57EDC;
-    --secondary-color: #E6E6FA;
+    --primary-color: #7494ec;
+    --secondary-color: #c9d6ff;
     --background-color: #FFFFFF;
     --accent-color: #F3E5F5;
-    --hover-color: #D8BFD8;
-    --text-color: #4A4A4A;
-    --danger-color: #DC3545;
+    --hover-color: #5a7de0;
+    --text-color: #333;
+    --danger-color: #dc3545;
     --success-color: #28a745;
     --warning-color: #ffc107;
 }
@@ -116,7 +116,7 @@ body {
 .form-control:focus {
     background-color: var(--accent-color);
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(255, 180, 72, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(116, 148, 236, 0.25);
 }
 
 /* Table Styles */
@@ -304,7 +304,7 @@ body {
     .sliding-panel {
         max-width: 100%;
     }
-    
+
     .card {
         margin-bottom: 1rem;
     }
@@ -322,14 +322,15 @@ body {
 }
 
 /* Typography */
-h3, h5 {
+h3,
+h5 {
     color: var(--text-color);
 }
 
 /* Alert Styles */
 .alert {
     border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .alert-info {
@@ -352,7 +353,7 @@ h3, h5 {
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -366,4 +367,4 @@ h3, h5 {
     color: var(--text-color);
     font-size: 1.2rem;
     line-height: 1.6;
-} 
+}
