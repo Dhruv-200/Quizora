@@ -3607,3 +3607,1076 @@
 2025-04-28 10:29:26,330 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 10:29:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-04-28 10:29:26,431 - __main__ - INFO - Displaying test result for student 1 - Test: Quiz 1
 2025-04-28 10:29:26,433 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 10:29:26] "GET /test_result HTTP/1.1" 200 -
+2025-04-28 17:43:02,866 - __main__ - INFO - Database initialized successfully
+2025-04-28 17:43:03,661 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-28 17:43:03,661 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-28 17:43:03,682 - werkzeug - INFO -  * Restarting with stat
+2025-04-28 17:43:06,685 - __main__ - INFO - Database initialized successfully
+2025-04-28 17:43:06,909 - werkzeug - WARNING -  * Debugger is active!
+2025-04-28 17:43:06,960 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-04-28 17:43:11,262 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:11] "GET / HTTP/1.1" 200 -
+2025-04-28 17:43:12,278 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-28 17:43:12,289 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:12] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-04-28 17:43:13,148 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-28 17:43:24,053 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-28 17:43:24,463 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-28 17:43:24,472 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-28 17:43:24,616 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:24] "GET /admin HTTP/1.1" 200 -
+2025-04-28 17:43:24,726 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:27,202 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:27] "GET /view_results HTTP/1.1" 200 -
+2025-04-28 17:43:27,296 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:27] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-28 17:43:29,323 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:29] "GET /admin HTTP/1.1" 200 -
+2025-04-28 17:43:29,418 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:42,413 - __main__ - INFO - Test 'Test' created successfully with ID 2
+2025-04-28 17:43:42,418 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:42] "POST /create_test HTTP/1.1" 200 -
+2025-04-28 17:43:44,040 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:44] "GET /admin HTTP/1.1" 200 -
+2025-04-28 17:43:44,144 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:45,367 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-28 17:43:45,403 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:45] "GET / HTTP/1.1" 200 -
+2025-04-28 17:43:45,489 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:45,505 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:45] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:54,578 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-04-28 17:43:54,957 - __main__ - INFO - Student login successful: student@example.com
+2025-04-28 17:43:54,963 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-28 17:43:55,007 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:55] "GET /student HTTP/1.1" 200 -
+2025-04-28 17:43:55,094 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:57,109 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:57] "GET /take_test/2 HTTP/1.1" 200 -
+2025-04-28 17:43:57,196 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:43:57,216 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:43:57] "GET /static/js/take_quiz.js HTTP/1.1" 200 -
+2025-04-28 17:44:00,405 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 1
+2025-04-28 17:44:00,420 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 1, Score: 0/10
+2025-04-28 17:44:00,423 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:00] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-04-28 17:44:00,434 - __main__ - INFO - Displaying test result for student 1 - Test: Test
+2025-04-28 17:44:00,469 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:00] "GET /test_result HTTP/1.1" 200 -
+2025-04-28 17:44:00,526 - __main__ - INFO - Displaying test result for student 1 - Test: Test
+2025-04-28 17:44:00,531 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:00] "GET /test_result HTTP/1.1" 200 -
+2025-04-28 17:44:00,615 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:04,296 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:04] "GET /student HTTP/1.1" 200 -
+2025-04-28 17:44:04,398 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:12,086 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:12] "GET /take_test/1 HTTP/1.1" 200 -
+2025-04-28 17:44:12,162 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:12,173 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:12] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-28 17:44:15,748 - __main__ - WARNING - Time limit exceeded - Test ID: 1, Student ID: 1
+2025-04-28 17:44:15,767 - __main__ - INFO - Test submitted successfully - Test ID: 1, Student ID: 1, Score: 5/100
+2025-04-28 17:44:15,774 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:15] "[32mPOST /submit_test/1 HTTP/1.1[0m" 302 -
+2025-04-28 17:44:15,790 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-04-28 17:44:15,795 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:15] "GET /test_result HTTP/1.1" 200 -
+2025-04-28 17:44:15,853 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-04-28 17:44:15,853 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:15] "GET /test_result HTTP/1.1" 200 -
+2025-04-28 17:44:15,952 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:21,837 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:21] "GET /student HTTP/1.1" 200 -
+2025-04-28 17:44:21,938 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:27,648 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:27] "[32mGET /download_certificate/1 HTTP/1.1[0m" 302 -
+2025-04-28 17:44:27,720 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:27] "GET /student/history HTTP/1.1" 200 -
+2025-04-28 17:44:27,793 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:32,368 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:32] "GET /student HTTP/1.1" 200 -
+2025-04-28 17:44:32,452 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:34,270 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:34] "[32mGET /download_certificate/2 HTTP/1.1[0m" 302 -
+2025-04-28 17:44:34,294 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:34] "GET /student/history HTTP/1.1" 200 -
+2025-04-28 17:44:34,390 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:36,230 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-28 17:44:36,252 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:36] "GET / HTTP/1.1" 200 -
+2025-04-28 17:44:36,337 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:36,348 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:36] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:45,729 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-28 17:44:46,174 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-28 17:44:46,184 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-28 17:44:46,216 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:46] "GET /admin HTTP/1.1" 200 -
+2025-04-28 17:44:46,320 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-28 17:44:47,278 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:47] "GET /view_results HTTP/1.1" 200 -
+2025-04-28 17:44:47,368 - werkzeug - INFO - 127.0.0.1 - - [28/Apr/2025 17:44:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-29 08:05:11,060 - __main__ - INFO - Database initialized successfully
+2025-04-29 08:05:11,882 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-29 08:05:11,882 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-29 08:05:11,906 - werkzeug - INFO -  * Restarting with stat
+2025-04-29 08:05:14,458 - __main__ - INFO - Database initialized successfully
+2025-04-29 08:05:14,560 - werkzeug - WARNING -  * Debugger is active!
+2025-04-29 08:05:14,619 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-04-29 08:05:19,699 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:19] "GET / HTTP/1.1" 200 -
+2025-04-29 08:05:20,806 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-29 08:05:20,812 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:20] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-04-29 08:05:32,332 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:05:32,790 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:05:32,820 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:05:32,921 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:32] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:05:33,018 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:05:44,688 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:44] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:05:44,787 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-29 08:05:46,725 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:46] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:05:46,806 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:05:59,648 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:59] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:05:59,762 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:05:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-29 08:06:00,786 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:06:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:06:00,804 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:06:00] "GET / HTTP/1.1" 200 -
+2025-04-29 08:06:00,898 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:06:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:06:00,937 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:06:00] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:09:38,628 - __main__ - INFO - Database initialized successfully
+2025-04-29 08:09:38,904 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-29 08:09:38,913 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-29 08:09:38,921 - werkzeug - INFO -  * Restarting with stat
+2025-04-29 08:09:41,614 - __main__ - INFO - Database initialized successfully
+2025-04-29 08:09:41,720 - werkzeug - WARNING -  * Debugger is active!
+2025-04-29 08:09:41,774 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-04-29 08:09:49,531 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:09:49] "GET / HTTP/1.1" 200 -
+2025-04-29 08:09:50,336 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:09:50] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-29 08:09:50,608 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:09:50] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-04-29 08:10:03,652 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-04-29 08:10:04,020 - __main__ - INFO - Student login successful: student@example.com
+2025-04-29 08:10:04,029 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:10:04,089 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:04] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:10:04,181 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:10:22,506 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:22] "GET /take_test/1 HTTP/1.1" 200 -
+2025-04-29 08:10:22,579 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:10:22,596 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:22] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-29 08:10:25,509 - __main__ - WARNING - Time limit exceeded - Test ID: 1, Student ID: 1
+2025-04-29 08:10:25,527 - __main__ - INFO - Test submitted successfully - Test ID: 1, Student ID: 1, Score: 5/100
+2025-04-29 08:10:25,535 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:25] "[32mPOST /submit_test/1 HTTP/1.1[0m" 302 -
+2025-04-29 08:10:25,566 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-04-29 08:10:25,618 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:25] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:10:25,662 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-04-29 08:10:25,675 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:25] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:10:25,755 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:10:30,287 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:30] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:10:30,383 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:10:35,759 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:10:35,794 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:35] "GET / HTTP/1.1" 200 -
+2025-04-29 08:10:35,897 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:10:35,908 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:35] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:10:48,162 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:10:48,501 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:10:48,513 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:10:48,575 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:48] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:10:48,677 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:10:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:29,027 - __main__ - INFO - Test 'Test' created successfully with ID 2
+2025-04-29 08:11:29,027 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:29] "POST /create_test HTTP/1.1" 200 -
+2025-04-29 08:11:30,607 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:30] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:11:30,715 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:31,439 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:31] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:11:31,546 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:36,020 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:36] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:11:36,113 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:39,693 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:39] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:11:39,779 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:41,591 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:41] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:11:41,684 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:42,259 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:11:42,282 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:42] "GET / HTTP/1.1" 200 -
+2025-04-29 08:11:42,362 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:42,386 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:42] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:11:54,982 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-04-29 08:11:55,454 - __main__ - INFO - Student login successful: student@example.com
+2025-04-29 08:11:55,460 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:11:55,496 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:55] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:11:55,593 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:11:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:12:00,247 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:00] "GET /take_test/2 HTTP/1.1" 200 -
+2025-04-29 08:12:00,345 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:12:00,374 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:00] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-29 08:12:03,628 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 1
+2025-04-29 08:12:03,647 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 1, Score: 10/10
+2025-04-29 08:12:03,651 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:03] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-04-29 08:12:03,665 - __main__ - INFO - Displaying test result for student 1 - Test: Test
+2025-04-29 08:12:03,665 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:03] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:12:03,739 - __main__ - INFO - Displaying test result for student 1 - Test: Test
+2025-04-29 08:12:03,741 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:03] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:12:03,834 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:12:06,349 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:06] "GET /download_certificate/2 HTTP/1.1" 200 -
+2025-04-29 08:12:19,834 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:19] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:12:19,938 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:12:29,136 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:12:29,162 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:29] "GET / HTTP/1.1" 200 -
+2025-04-29 08:12:29,273 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:29] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:12:29,273 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:12:47,961 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:12:48,376 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:12:48,387 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:12:48,415 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:48] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:12:48,493 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:12:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:14:09,325 - __main__ - INFO - Database initialized successfully
+2025-04-29 08:14:09,546 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-29 08:14:09,546 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-29 08:14:09,549 - werkzeug - INFO -  * Restarting with stat
+2025-04-29 08:14:12,281 - __main__ - INFO - Database initialized successfully
+2025-04-29 08:14:12,383 - werkzeug - WARNING -  * Debugger is active!
+2025-04-29 08:14:12,446 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-04-29 08:14:14,228 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:14] "GET / HTTP/1.1" 200 -
+2025-04-29 08:14:14,991 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:14:15,091 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:15] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-04-29 08:14:27,050 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:14:27,451 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:14:27,463 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:14:27,525 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:27] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:14:27,611 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:14:48,841 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:14:48] "POST /admin/profile/update HTTP/1.1" 200 -
+2025-04-29 08:15:15,795 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:15] "POST /admin/students/add HTTP/1.1" 200 -
+2025-04-29 08:15:27,812 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:27] "POST /admin/students/add HTTP/1.1" 200 -
+2025-04-29 08:15:40,044 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:40] "POST /admin/students/add HTTP/1.1" 200 -
+2025-04-29 08:15:41,760 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:41] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:15:42,054 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:15:46,331 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:46] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:15:46,422 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:15:49,412 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:49] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:15:49,506 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:15:50,690 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:50] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:15:50,776 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:15:52,379 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:52] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:15:52,485 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:15:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:16:36,153 - __main__ - INFO - Test '2+2' created successfully with ID 2
+2025-04-29 08:16:36,157 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:36] "POST /create_test HTTP/1.1" 200 -
+2025-04-29 08:16:38,110 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:38] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:16:38,441 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:16:42,089 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:16:42,137 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:42] "GET / HTTP/1.1" 200 -
+2025-04-29 08:16:42,230 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:16:42,394 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:16:42] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:05,737 - __main__ - INFO - Login attempt - Email: dhruv@gmail.com, Role: student
+2025-04-29 08:17:06,103 - __main__ - INFO - Student login successful: dhruv@gmail.com
+2025-04-29 08:17:06,119 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:17:06,202 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:06] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:17:06,290 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:13,923 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:13] "GET /take_test/2 HTTP/1.1" 200 -
+2025-04-29 08:17:14,008 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:14,023 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:14] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-29 08:17:16,368 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 2
+2025-04-29 08:17:16,387 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 2, Score: 12/12
+2025-04-29 08:17:16,394 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:16] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-04-29 08:17:16,418 - __main__ - INFO - Displaying test result for student 2 - Test: 2+2
+2025-04-29 08:17:16,466 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:16] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:17:16,518 - __main__ - INFO - Displaying test result for student 2 - Test: 2+2
+2025-04-29 08:17:16,522 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:16] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:17:16,617 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:20,897 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:20] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:17:21,006 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:22,881 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:17:22,907 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:22] "GET / HTTP/1.1" 200 -
+2025-04-29 08:17:23,033 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:23,126 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:23] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:36,446 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:17:37,032 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:17:37,044 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:17:37,072 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:37] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:17:37,150 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:38,686 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:38] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:17:38,794 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:45,192 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:45] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:17:45,299 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:47,955 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:17:48,024 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:48] "GET / HTTP/1.1" 200 -
+2025-04-29 08:17:48,153 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:17:48,200 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:17:48] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:00,155 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-04-29 08:18:00,657 - __main__ - INFO - Student login successful: student@example.com
+2025-04-29 08:18:00,690 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:18:00,739 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:00] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:18:00,841 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:03,167 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:03] "GET /take_test/2 HTTP/1.1" 200 -
+2025-04-29 08:18:03,264 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:03,298 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:03] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-29 08:18:04,579 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 1
+2025-04-29 08:18:04,598 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 1, Score: 0/12
+2025-04-29 08:18:04,604 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:04] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-04-29 08:18:04,619 - __main__ - INFO - Displaying test result for student 1 - Test: 2+2
+2025-04-29 08:18:04,628 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:04] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:18:04,696 - __main__ - INFO - Displaying test result for student 1 - Test: 2+2
+2025-04-29 08:18:04,701 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:04] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:18:04,795 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:06,574 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:06] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:18:06,658 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:08,241 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:18:08,269 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:08] "GET / HTTP/1.1" 200 -
+2025-04-29 08:18:08,347 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:08,362 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:08] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:19,716 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:18:20,012 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:18:20,029 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:18:20,053 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:20] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:18:20,161 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:21,340 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:21] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:18:21,434 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:33,616 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:33] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:18:33,718 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:43,725 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:18:43,760 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:43] "GET / HTTP/1.1" 200 -
+2025-04-29 08:18:43,855 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:18:43,867 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:18:43] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:48:38,887 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:48:38] "GET / HTTP/1.1" 200 -
+2025-04-29 08:48:47,731 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:48:48,210 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:48:48,228 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:48:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:48:48,271 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:48:48] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:48:48,440 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:48:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:49:52,928 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:49:52] "GET /view_results HTTP/1.1" 200 -
+2025-04-29 08:49:53,025 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:49:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:49:56,811 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:49:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:49:56,837 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:49:56] "GET / HTTP/1.1" 200 -
+2025-04-29 08:49:56,920 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:49:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:49:56,938 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:49:56] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:04,553 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-04-29 08:50:04,908 - __main__ - INFO - Student login successful: student@example.com
+2025-04-29 08:50:04,916 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:50:04,940 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:04] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:50:05,040 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:19,941 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:19] "GET /take_test/1 HTTP/1.1" 200 -
+2025-04-29 08:50:20,023 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:20,037 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:20] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-29 08:50:22,407 - __main__ - WARNING - Time limit exceeded - Test ID: 1, Student ID: 1
+2025-04-29 08:50:22,425 - __main__ - INFO - Test submitted successfully - Test ID: 1, Student ID: 1, Score: 5/100
+2025-04-29 08:50:22,429 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:22] "[32mPOST /submit_test/1 HTTP/1.1[0m" 302 -
+2025-04-29 08:50:22,442 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-04-29 08:50:22,450 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:22] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:50:22,510 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-04-29 08:50:22,515 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:22] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:50:22,609 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:24,513 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:24] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:50:24,595 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:32,633 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:50:32,669 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:32] "GET / HTTP/1.1" 200 -
+2025-04-29 08:50:32,755 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:32,775 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:32] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:50:46,246 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-04-29 08:50:46,586 - __main__ - INFO - Admin login successful: admin@example.com
+2025-04-29 08:50:46,621 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:50:46,644 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:46] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:50:46,730 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:50:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:51:01,785 - __main__ - INFO - Test '2+2' created successfully with ID 3
+2025-04-29 08:51:01,791 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:01] "POST /create_test HTTP/1.1" 200 -
+2025-04-29 08:51:03,371 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:03] "GET /admin HTTP/1.1" 200 -
+2025-04-29 08:51:03,476 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:51:09,641 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:09] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-29 08:51:09,666 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:09] "GET / HTTP/1.1" 200 -
+2025-04-29 08:51:09,771 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:51:09,788 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:09] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:51:20,093 - __main__ - INFO - Login attempt - Email: dhruv@gmail.com, Role: student
+2025-04-29 08:51:20,552 - __main__ - INFO - Student login successful: dhruv@gmail.com
+2025-04-29 08:51:20,595 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 08:51:20,624 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:20] "GET /student HTTP/1.1" 200 -
+2025-04-29 08:51:20,723 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:51:34,266 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:34] "GET /download_certificate/2 HTTP/1.1" 200 -
+2025-04-29 08:51:41,658 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:41] "GET /take_test/3 HTTP/1.1" 200 -
+2025-04-29 08:51:41,734 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-29 08:51:41,752 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:41] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-04-29 08:51:44,189 - __main__ - WARNING - Time limit exceeded - Test ID: 3, Student ID: 2
+2025-04-29 08:51:44,207 - __main__ - INFO - Test submitted successfully - Test ID: 3, Student ID: 2, Score: 12/12
+2025-04-29 08:51:44,213 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:44] "[32mPOST /submit_test/3 HTTP/1.1[0m" 302 -
+2025-04-29 08:51:44,226 - __main__ - INFO - Displaying test result for student 2 - Test: 2+2
+2025-04-29 08:51:44,235 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:44] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:51:44,297 - __main__ - INFO - Displaying test result for student 2 - Test: 2+2
+2025-04-29 08:51:44,300 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:44] "GET /test_result HTTP/1.1" 200 -
+2025-04-29 08:51:44,368 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 08:51:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:04,985 - __main__ - INFO - Database initialized successfully
+2025-05-05 20:17:05,607 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 20:17:05,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 20:17:05,633 - werkzeug - INFO -  * Restarting with stat
+2025-05-05 20:17:10,655 - __main__ - INFO - Database initialized successfully
+2025-05-05 20:17:11,030 - werkzeug - WARNING -  * Debugger is active!
+2025-05-05 20:17:11,085 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-05-05 20:17:15,995 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:15] "GET / HTTP/1.1" 200 -
+2025-05-05 20:17:16,032 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:16] "GET / HTTP/1.1" 200 -
+2025-05-05 20:17:17,673 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:17] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-05-05 20:17:17,983 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:17] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:18,098 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-05 20:17:18,115 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:18,707 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-05 20:17:18,738 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-05 20:17:27,491 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-05 20:17:27,831 - __main__ - INFO - Student login successful: student@example.com
+2025-05-05 20:17:27,840 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-05 20:17:27,906 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:27] "GET /student HTTP/1.1" 200 -
+2025-05-05 20:17:28,028 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:40,577 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:40] "GET /take_test/1 HTTP/1.1" 200 -
+2025-05-05 20:17:40,707 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:40,736 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:40] "GET /static/js/take_quiz.js HTTP/1.1" 200 -
+2025-05-05 20:17:43,175 - __main__ - WARNING - Time limit exceeded - Test ID: 1, Student ID: 1
+2025-05-05 20:17:43,198 - __main__ - INFO - Test submitted successfully - Test ID: 1, Student ID: 1, Score: 5/100
+2025-05-05 20:17:43,207 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:43] "[32mPOST /submit_test/1 HTTP/1.1[0m" 302 -
+2025-05-05 20:17:43,235 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-05-05 20:17:43,318 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:43] "GET /test_result HTTP/1.1" 200 -
+2025-05-05 20:17:43,393 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-05-05 20:17:43,399 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:43] "GET /test_result HTTP/1.1" 200 -
+2025-05-05 20:17:43,511 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:51,450 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:51] "GET /student HTTP/1.1" 200 -
+2025-05-05 20:17:51,566 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:56,837 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-05 20:17:56,863 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:56] "GET / HTTP/1.1" 200 -
+2025-05-05 20:17:56,979 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:17:57,002 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:17:57] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:18:10,502 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-05 20:18:10,866 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-05 20:18:10,872 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-05 20:18:10,947 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:10] "GET /admin HTTP/1.1" 200 -
+2025-05-05 20:18:11,023 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:18:31,834 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:31] "POST /admin/students/add HTTP/1.1" 200 -
+2025-05-05 20:18:33,952 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:33] "GET /admin HTTP/1.1" 200 -
+2025-05-05 20:18:34,092 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:18:36,250 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:36] "GET /view_results HTTP/1.1" 200 -
+2025-05-05 20:18:36,341 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:18:39,018 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:39] "GET /admin HTTP/1.1" 200 -
+2025-05-05 20:18:39,108 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:18:57,235 - __main__ - INFO - Test '2+2' created successfully with ID 2
+2025-05-05 20:18:57,238 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:57] "POST /create_test HTTP/1.1" 200 -
+2025-05-05 20:18:59,346 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:59] "GET /admin HTTP/1.1" 200 -
+2025-05-05 20:18:59,473 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:18:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:09,326 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:09] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-05 20:19:09,379 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:09] "GET / HTTP/1.1" 200 -
+2025-05-05 20:19:09,480 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:09,513 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:09] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:19,352 - __main__ - INFO - Login attempt - Email: dhruv@gmail.com, Role: student
+2025-05-05 20:19:19,709 - __main__ - INFO - Student login successful: dhruv@gmail.com
+2025-05-05 20:19:19,724 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-05 20:19:19,757 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:19] "GET /student HTTP/1.1" 200 -
+2025-05-05 20:19:19,853 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:22,368 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:22] "GET /take_test/2 HTTP/1.1" 200 -
+2025-05-05 20:19:22,464 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:22,484 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:22] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-05-05 20:19:25,356 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 2
+2025-05-05 20:19:25,382 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 2, Score: 12/12
+2025-05-05 20:19:25,393 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:25] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-05-05 20:19:25,414 - __main__ - INFO - Displaying test result for student 2 - Test: 2+2
+2025-05-05 20:19:25,421 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:25] "GET /test_result HTTP/1.1" 200 -
+2025-05-05 20:19:25,487 - __main__ - INFO - Displaying test result for student 2 - Test: 2+2
+2025-05-05 20:19:25,491 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:25] "GET /test_result HTTP/1.1" 200 -
+2025-05-05 20:19:25,604 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:29,799 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:29] "GET /download_certificate/2 HTTP/1.1" 200 -
+2025-05-05 20:19:48,471 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:48] "GET /student HTTP/1.1" 200 -
+2025-05-05 20:19:48,585 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:51,323 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-05 20:19:51,381 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:51] "GET / HTTP/1.1" 200 -
+2025-05-05 20:19:51,488 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:19:51,521 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:19:51] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:01,496 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-05 20:20:01,863 - __main__ - INFO - Student login successful: student@example.com
+2025-05-05 20:20:01,873 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-05 20:20:01,911 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:01] "GET /student HTTP/1.1" 200 -
+2025-05-05 20:20:02,009 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:03,627 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:03] "GET /take_test/2 HTTP/1.1" 200 -
+2025-05-05 20:20:03,744 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:03,799 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:03] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-05-05 20:20:06,571 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 1
+2025-05-05 20:20:06,587 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 1, Score: 0/12
+2025-05-05 20:20:06,591 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:06] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-05-05 20:20:06,603 - __main__ - INFO - Displaying test result for student 1 - Test: 2+2
+2025-05-05 20:20:06,603 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:06] "GET /test_result HTTP/1.1" 200 -
+2025-05-05 20:20:06,659 - __main__ - INFO - Displaying test result for student 1 - Test: 2+2
+2025-05-05 20:20:06,674 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:06] "GET /test_result HTTP/1.1" 200 -
+2025-05-05 20:20:06,773 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:08,713 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:08] "GET /student HTTP/1.1" 200 -
+2025-05-05 20:20:08,822 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:10,131 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-05 20:20:10,172 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:10] "GET / HTTP/1.1" 200 -
+2025-05-05 20:20:10,270 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:10,294 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:10] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:18,021 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-05 20:20:18,368 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-05 20:20:18,378 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-05 20:20:18,436 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:18] "GET /admin HTTP/1.1" 200 -
+2025-05-05 20:20:18,537 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:19,941 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:19] "GET /view_results HTTP/1.1" 200 -
+2025-05-05 20:20:20,043 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:42,765 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-05 20:20:42,822 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:42] "GET / HTTP/1.1" 200 -
+2025-05-05 20:20:42,931 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:20:42,962 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:20:42] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:21:15,953 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-05 20:21:16,392 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-05 20:21:16,402 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:21:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-05 20:21:16,428 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:21:16] "GET /admin HTTP/1.1" 200 -
+2025-05-05 20:21:16,510 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:21:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-05 20:22:36,478 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:22:36] "GET /view_results HTTP/1.1" 200 -
+2025-05-05 20:22:36,561 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 20:22:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:56:56,135 - __main__ - INFO - Database initialized successfully
+2025-05-06 07:56:56,396 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-06 07:56:56,396 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-06 07:56:56,414 - werkzeug - INFO -  * Restarting with stat
+2025-05-06 07:56:58,131 - __main__ - INFO - Database initialized successfully
+2025-05-06 07:56:58,187 - werkzeug - WARNING -  * Debugger is active!
+2025-05-06 07:56:58,219 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-05-06 07:57:02,153 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:02] "GET / HTTP/1.1" 200 -
+2025-05-06 07:57:03,226 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:57:03,306 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:03] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:57:42,746 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 07:57:43,069 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 07:57:43,075 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 07:57:43,117 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:43] "GET /student HTTP/1.1" 200 -
+2025-05-06 07:57:43,183 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:57:58,548 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:57:58] "POST /student/profile/update HTTP/1.1" 200 -
+2025-05-06 07:58:10,600 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:10] "POST /student/profile/update HTTP/1.1" 200 -
+2025-05-06 07:58:12,275 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:12] "GET /student HTTP/1.1" 200 -
+2025-05-06 07:58:12,343 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:58:15,497 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 07:58:15,533 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:15] "GET / HTTP/1.1" 200 -
+2025-05-06 07:58:15,572 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:58:15,606 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:15] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:58:22,822 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 07:58:23,064 - __main__ - WARNING - Login failed - Invalid password for user: admin@example.com
+2025-05-06 07:58:23,064 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 07:58:23,083 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:23] "GET / HTTP/1.1" 200 -
+2025-05-06 07:58:23,148 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:58:23,160 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:23] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:58:30,899 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 07:58:31,137 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 07:58:31,144 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 07:58:31,222 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:31] "GET /admin HTTP/1.1" 200 -
+2025-05-06 07:58:31,307 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:58:56,489 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:56] "POST /admin/students/add HTTP/1.1" 200 -
+2025-05-06 07:58:59,741 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:58:59] "POST /admin/students/add HTTP/1.1" 200 -
+2025-05-06 07:59:09,984 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:59:09] "POST /admin/students/add HTTP/1.1" 200 -
+2025-05-06 07:59:11,826 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:59:11] "GET /admin HTTP/1.1" 200 -
+2025-05-06 07:59:11,905 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:59:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 07:59:29,004 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:59:29] "[32mPOST /create_subject HTTP/1.1[0m" 302 -
+2025-05-06 07:59:29,032 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:59:29] "GET /admin HTTP/1.1" 200 -
+2025-05-06 07:59:29,112 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 07:59:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:00:28,763 - __main__ - INFO - Test 'Python Test' created successfully with ID 2
+2025-05-06 08:00:28,775 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:28] "POST /create_test HTTP/1.1" 200 -
+2025-05-06 08:00:31,333 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:31] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:00:31,417 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:00:33,793 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:00:33,819 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:33] "GET / HTTP/1.1" 200 -
+2025-05-06 08:00:33,897 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:00:33,919 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:33] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:00:44,784 - __main__ - INFO - Login attempt - Email: vedu@gmail.com, Role: student
+2025-05-06 08:00:45,025 - __main__ - INFO - Student login successful: vedu@gmail.com
+2025-05-06 08:00:45,033 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:00:45,051 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:45] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:00:45,112 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:00:48,475 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:48] "GET /take_test/2 HTTP/1.1" 200 -
+2025-05-06 08:00:48,525 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:00:48,533 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:48] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-05-06 08:00:59,153 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 2
+2025-05-06 08:00:59,160 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 2, Score: 20/20
+2025-05-06 08:00:59,169 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:59] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-05-06 08:00:59,181 - __main__ - INFO - Displaying test result for student 2 - Test: Python Test
+2025-05-06 08:00:59,209 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:59] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 08:00:59,257 - __main__ - INFO - Displaying test result for student 2 - Test: Python Test
+2025-05-06 08:00:59,266 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:59] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 08:00:59,341 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:00:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:07,113 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:07] "GET /download_certificate/2 HTTP/1.1" 200 -
+2025-05-06 08:01:27,110 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:27] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:01:27,179 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:28,525 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:01:28,548 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:28] "GET / HTTP/1.1" 200 -
+2025-05-06 08:01:28,610 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:28,632 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:28] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:35,513 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 08:01:35,770 - __main__ - WARNING - Login failed - Invalid password for user: student@example.com
+2025-05-06 08:01:35,774 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:01:35,783 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:35] "GET / HTTP/1.1" 200 -
+2025-05-06 08:01:35,842 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:35,849 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:35] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:50,426 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 08:01:50,661 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 08:01:50,670 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:01:50,693 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:50] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:01:50,745 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:52,510 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:52] "GET /take_test/2 HTTP/1.1" 200 -
+2025-05-06 08:01:52,567 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:01:52,582 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:52] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-05-06 08:01:55,357 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 1
+2025-05-06 08:01:55,376 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 1, Score: 0/20
+2025-05-06 08:01:55,380 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:55] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-05-06 08:01:55,395 - __main__ - INFO - Displaying test result for student 1 - Test: Python Test
+2025-05-06 08:01:55,398 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:55] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 08:01:55,444 - __main__ - INFO - Displaying test result for student 1 - Test: Python Test
+2025-05-06 08:01:55,448 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:55] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 08:01:55,518 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:01:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:00,200 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:00] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:02:00,264 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:01,654 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:02:01,672 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:01] "GET / HTTP/1.1" 200 -
+2025-05-06 08:02:01,744 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:01,765 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:01] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:08,678 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 08:02:08,914 - __main__ - WARNING - Login failed - Invalid password for user: admin@example.com
+2025-05-06 08:02:08,916 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:02:08,928 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:08] "GET / HTTP/1.1" 200 -
+2025-05-06 08:02:09,001 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:09,015 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:09] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:16,401 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 08:02:16,725 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 08:02:16,732 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:02:16,758 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:16] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:02:16,827 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:18,346 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:18] "GET /view_results HTTP/1.1" 200 -
+2025-05-06 08:02:18,413 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:40,243 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:40] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:02:40,314 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:44,930 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:02:44,960 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:44] "GET / HTTP/1.1" 200 -
+2025-05-06 08:02:45,025 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:02:45,040 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:02:45] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:25:52,163 - __main__ - INFO - Database initialized successfully
+2025-05-06 08:25:52,435 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-06 08:25:52,435 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-06 08:25:52,439 - werkzeug - INFO -  * Restarting with stat
+2025-05-06 08:25:54,724 - __main__ - INFO - Database initialized successfully
+2025-05-06 08:25:54,808 - werkzeug - WARNING -  * Debugger is active!
+2025-05-06 08:25:54,838 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-05-06 08:26:09,544 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:09] "GET / HTTP/1.1" 200 -
+2025-05-06 08:26:10,772 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:10,957 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:10] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:18,912 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 08:26:19,184 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 08:26:19,191 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:26:19,228 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:19] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:26:19,297 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:37,660 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:26:37,680 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:37] "GET / HTTP/1.1" 200 -
+2025-05-06 08:26:37,752 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:37,768 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:37] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:49,453 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 08:26:49,758 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 08:26:49,765 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:26:49,784 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:49] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:26:49,839 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:50,912 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:50] "GET /take_test/1 HTTP/1.1" 200 -
+2025-05-06 08:26:50,979 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:26:50,996 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:50] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-05-06 08:26:57,163 - __main__ - WARNING - Time limit exceeded - Test ID: 1, Student ID: 1
+2025-05-06 08:26:57,176 - __main__ - INFO - Test submitted successfully - Test ID: 1, Student ID: 1, Score: 5/100
+2025-05-06 08:26:57,178 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:57] "[32mPOST /submit_test/1 HTTP/1.1[0m" 302 -
+2025-05-06 08:26:57,190 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-05-06 08:26:57,216 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:57] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 08:26:57,253 - __main__ - INFO - Displaying test result for student 1 - Test: Basic Mathematics Quiz
+2025-05-06 08:26:57,262 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:57] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 08:26:57,329 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:26:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:23,120 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:23] "GET /student HTTP/1.1" 200 -
+2025-05-06 08:27:23,188 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:24,663 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:27:24,685 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:24] "GET / HTTP/1.1" 200 -
+2025-05-06 08:27:24,746 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:24,758 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:24] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:34,650 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: student
+2025-05-06 08:27:34,654 - __main__ - WARNING - Login failed - User not found: admin@example.com
+2025-05-06 08:27:34,656 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:27:34,676 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:34] "GET / HTTP/1.1" 200 -
+2025-05-06 08:27:34,753 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:34,758 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:34] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:43,104 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 08:27:43,335 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 08:27:43,341 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:27:43,382 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:43] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:27:43,439 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:27:52,769 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:52] "GET /view_results HTTP/1.1" 200 -
+2025-05-06 08:27:52,857 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:27:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:28:02,571 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:28:02] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:28:02,648 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:28:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:29:12,046 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:12] "GET /view_results HTTP/1.1" 200 -
+2025-05-06 08:29:12,105 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:29:28,835 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:28] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:29:28,900 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:29:48,316 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:29:48,336 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:48] "GET / HTTP/1.1" 200 -
+2025-05-06 08:29:48,399 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:29:48,416 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:29:48] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:30:01,613 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 08:30:01,852 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 08:30:01,860 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:30:01,882 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:01] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:30:01,940 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:30:32,084 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 08:30:32,102 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:32] "GET / HTTP/1.1" 200 -
+2025-05-06 08:30:32,202 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:30:32,214 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:30:32] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 08:31:23,721 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 08:31:24,015 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 08:31:24,023 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:31:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 08:31:24,038 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:31:24] "GET /admin HTTP/1.1" 200 -
+2025-05-06 08:31:24,104 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 08:31:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:21:46,122 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:21:46] "GET /admin HTTP/1.1" 200 -
+2025-05-06 09:21:46,656 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:21:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:21:50,382 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:21:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 09:21:50,444 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:21:50] "GET / HTTP/1.1" 200 -
+2025-05-06 09:21:50,596 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:21:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:21:50,682 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:21:50] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:22:26,760 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:26] "[32mPOST /create_test HTTP/1.1[0m" 302 -
+2025-05-06 09:22:26,812 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:26] "GET / HTTP/1.1" 200 -
+2025-05-06 09:22:41,764 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:41] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 09:22:41,820 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:41] "GET / HTTP/1.1" 200 -
+2025-05-06 09:22:41,948 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:22:41,957 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:41] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:22:52,737 - __main__ - INFO - Login attempt - Email: dhruv@gmail.com, Role: student
+2025-05-06 09:22:52,751 - __main__ - WARNING - Login failed - User not found: dhruv@gmail.com
+2025-05-06 09:22:52,758 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 09:22:52,792 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:52] "GET / HTTP/1.1" 200 -
+2025-05-06 09:22:52,928 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:22:52,959 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:22:52] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:23:18,388 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 09:23:19,012 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 09:23:19,034 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:23:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 09:23:19,085 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:23:19] "GET /student HTTP/1.1" 200 -
+2025-05-06 09:23:19,202 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:23:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:24:42,168 - __main__ - INFO - Database initialized successfully
+2025-05-06 09:24:42,814 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-06 09:24:42,814 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-06 09:24:42,852 - werkzeug - INFO -  * Restarting with stat
+2025-05-06 09:24:45,460 - __main__ - INFO - Database initialized successfully
+2025-05-06 09:24:45,638 - werkzeug - WARNING -  * Debugger is active!
+2025-05-06 09:24:45,718 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-05-06 09:24:53,165 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:24:53] "GET / HTTP/1.1" 200 -
+2025-05-06 09:24:54,228 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:24:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:24:54,681 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:24:54] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-05-06 09:25:17,311 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:25:17] "GET / HTTP/1.1" 200 -
+2025-05-06 09:25:17,387 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:25:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 09:25:17,399 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 09:25:17] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-05-06 11:45:25,789 - __main__ - INFO - Database initialized successfully
+2025-05-06 11:45:26,060 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-06 11:45:26,060 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-06 11:45:26,060 - werkzeug - INFO -  * Restarting with stat
+2025-05-06 11:45:28,911 - __main__ - INFO - Database initialized successfully
+2025-05-06 11:45:29,049 - werkzeug - WARNING -  * Debugger is active!
+2025-05-06 11:45:29,131 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-05-06 11:45:32,772 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:45:32] "GET / HTTP/1.1" 200 -
+2025-05-06 11:45:33,788 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:45:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:45:33,981 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:45:33] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:46:34,561 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 11:46:35,032 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 11:46:35,046 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:46:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 11:46:35,168 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:46:35] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:46:35,297 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:46:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:47:18,835 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:18] "POST /admin/students/add HTTP/1.1" 200 -
+2025-05-06 11:47:21,599 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:21] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:47:21,727 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:47:36,316 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:36] "[32mPOST /create_subject HTTP/1.1[0m" 302 -
+2025-05-06 11:47:36,378 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:36] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:47:36,538 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:47:57,797 - __main__ - INFO - Test 'Python Test' created successfully with ID 2
+2025-05-06 11:47:57,803 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:47:57] "POST /create_test HTTP/1.1" 200 -
+2025-05-06 11:48:00,760 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:00] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:48:00,902 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:20,427 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 11:48:20,475 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:20] "GET / HTTP/1.1" 200 -
+2025-05-06 11:48:20,596 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:20,623 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:20] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:32,262 - __main__ - INFO - Login attempt - Email: dhruv.navadiya@somaiya.edu, Role: student
+2025-05-06 11:48:32,792 - __main__ - WARNING - Login failed - Invalid password for user: dhruv.navadiya@somaiya.edu
+2025-05-06 11:48:32,796 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 11:48:32,828 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:32] "GET / HTTP/1.1" 200 -
+2025-05-06 11:48:32,971 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:33,006 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:33] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:42,612 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 11:48:43,026 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 11:48:43,036 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 11:48:43,110 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:43] "GET /student HTTP/1.1" 200 -
+2025-05-06 11:48:43,206 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:49,543 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:49] "GET /take_test/2 HTTP/1.1" 200 -
+2025-05-06 11:48:49,669 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:48:49,701 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:49] "[36mGET /static/js/take_quiz.js HTTP/1.1[0m" 304 -
+2025-05-06 11:48:58,657 - __main__ - WARNING - Time limit exceeded - Test ID: 2, Student ID: 1
+2025-05-06 11:48:58,675 - __main__ - INFO - Test submitted successfully - Test ID: 2, Student ID: 1, Score: 20/20
+2025-05-06 11:48:58,689 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:58] "[32mPOST /submit_test/2 HTTP/1.1[0m" 302 -
+2025-05-06 11:48:58,724 - __main__ - INFO - Displaying test result for student 1 - Test: Python Test
+2025-05-06 11:48:58,786 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:58] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 11:48:58,852 - __main__ - INFO - Displaying test result for student 1 - Test: Python Test
+2025-05-06 11:48:58,856 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:58] "GET /test_result HTTP/1.1" 200 -
+2025-05-06 11:48:58,976 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:48:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:49:11,916 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:11] "GET /download_certificate/2 HTTP/1.1" 200 -
+2025-05-06 11:49:26,971 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:26] "GET /student HTTP/1.1" 200 -
+2025-05-06 11:49:27,079 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:49:30,647 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 11:49:30,681 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:30] "GET / HTTP/1.1" 200 -
+2025-05-06 11:49:30,840 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:30] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:49:30,851 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:49:41,224 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 11:49:41,693 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 11:49:41,711 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 11:49:41,756 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:41] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:49:41,874 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:49:43,780 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:43] "GET /view_results HTTP/1.1" 200 -
+2025-05-06 11:49:43,928 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:49:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:50:03,669 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:03] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:50:03,781 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:50:04,991 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 11:50:05,035 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:05] "GET / HTTP/1.1" 200 -
+2025-05-06 11:50:05,171 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:50:05,205 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:05] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:50:15,354 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-06 11:50:15,777 - __main__ - INFO - Student login successful: student@example.com
+2025-05-06 11:50:15,793 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 11:50:15,837 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:15] "GET /student HTTP/1.1" 200 -
+2025-05-06 11:50:15,960 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:50:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:51:22,930 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-06 11:51:22,979 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:22] "GET / HTTP/1.1" 200 -
+2025-05-06 11:51:23,257 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:51:23,261 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:23] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-06 11:51:32,401 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-06 11:51:32,770 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-06 11:51:32,779 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-06 11:51:32,835 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:32] "GET /admin HTTP/1.1" 200 -
+2025-05-06 11:51:32,954 - werkzeug - INFO - 127.0.0.1 - - [06/May/2025 11:51:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:20:25,933 - __main__ - INFO - Database initialized successfully
+2025-05-11 22:20:26,439 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-11 22:20:26,439 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-11 22:20:26,463 - werkzeug - INFO -  * Restarting with stat
+2025-05-11 22:20:29,722 - __main__ - INFO - Database initialized successfully
+2025-05-11 22:20:29,861 - werkzeug - WARNING -  * Debugger is active!
+2025-05-11 22:20:29,929 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-05-11 22:20:37,678 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:37] "GET / HTTP/1.1" 200 -
+2025-05-11 22:20:37,712 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:37] "GET / HTTP/1.1" 200 -
+2025-05-11 22:20:39,638 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:39] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:20:39,791 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:20:39,814 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:39] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:20:39,836 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:20:58,172 - __main__ - INFO - Login attempt - Email: student@example.com, Role: student
+2025-05-11 22:20:58,596 - __main__ - INFO - Student login successful: student@example.com
+2025-05-11 22:20:58,609 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-11 22:20:58,681 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:58] "GET /student HTTP/1.1" 200 -
+2025-05-11 22:20:58,809 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:20:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:21:12,933 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-11 22:21:12,974 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:12] "GET / HTTP/1.1" 200 -
+2025-05-11 22:21:13,119 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:21:13,148 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:13] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:21:26,518 - __main__ - INFO - Login attempt - Email: admin@example.com, Role: admin
+2025-05-11 22:21:26,982 - __main__ - INFO - Admin login successful: admin@example.com
+2025-05-11 22:21:26,995 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-11 22:21:27,110 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:27] "GET /admin HTTP/1.1" 200 -
+2025-05-11 22:21:27,205 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:21:42,703 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:42] "GET /view_results HTTP/1.1" 200 -
+2025-05-11 22:21:42,771 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:21:52,307 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:52] "GET /admin HTTP/1.1" 200 -
+2025-05-11 22:21:52,391 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:21:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:22:25,763 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:22:25] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-11 22:22:25,798 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:22:25] "GET / HTTP/1.1" 200 -
+2025-05-11 22:22:25,865 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:22:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 22:22:25,881 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 22:22:25] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:22:49,020 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:22:49,287 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 14:22:49,288 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-09 14:22:49,306 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:22:51,979 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:22:52,049 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:22:52,079 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:22:54,954 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:22:54] "GET / HTTP/1.1" 200 -
+2025-06-09 14:22:55,815 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:22:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-09 14:22:55,834 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:22:55] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-06-09 14:22:57,560 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:22:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-09 14:22:59,818 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:22:59] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:23:09,296 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:23:09,756 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:23:09,766 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:23:10,068 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:23:10,071 - __main__ - INFO - Google login attempt - Email: dhruv.navadiya@somaiya.edu
+2025-06-09 14:23:10,333 - __main__ - INFO - New student account created via Google: dhruv.navadiya@somaiya.edu
+2025-06-09 14:23:10,335 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:10] "[32mGET /google/callback?code=4/0AUJR-x65xd18FLWcgSWFV6dpw78nm1EhoUzZ3mLQxav87h8Sw5BGJv5vYKwQc5_Gla8qbA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&hd=somaiya.edu&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:23:10,389 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:10] "GET /student HTTP/1.1" 200 -
+2025-06-09 14:23:10,502 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-09 14:23:12,943 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-09 14:23:13,462 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:13] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 14:23:13,485 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:13] "GET / HTTP/1.1" 200 -
+2025-06-09 14:23:13,582 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:23:13,584 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:13] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-06-09 14:23:14,433 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-09 14:23:18,262 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:18] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:23:25,968 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:23:26,316 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:23:26,320 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:23:26,624 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:23:26,628 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:26] "[32mGET /google/callback?code=4/0AUJR-x4I_EdfU6EOJZ5JJOnycdHbIDg8Cn1N9zjRwJEoey3OXl0jb21IQSURWvuTGoj00g&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=1&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:23:26,645 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:26] "GET / HTTP/1.1" 200 -
+2025-06-09 14:23:26,779 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:23:26,780 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:23:26] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:24:41,645 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:24:41] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:29:40,783 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:29:41,261 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:29:41,273 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:29:41,557 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:29:41,587 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:29:41] "[32mGET /google/callback?code=4/0AUJR-x4vMPvxMvLka1NxNo1jWZ3kmpU_kI7JEpVT7ssO8-OtJfL3oljHQ7eyPxsBq7vccw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=2&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:29:41,625 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:29:41] "GET / HTTP/1.1" 200 -
+2025-06-09 14:29:41,826 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:29:41] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:29:41,826 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:29:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:29:56,971 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:29:56] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:30:13,016 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:30:13,332 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:30:13,344 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:30:13,537 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:30:13,544 - __main__ - INFO - Google login attempt - Email: dhruv.navadiya@somaiya.edu
+2025-06-09 14:30:13,623 - __main__ - INFO - Student Google login successful: dhruv.navadiya@somaiya.edu
+2025-06-09 14:30:13,628 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:13] "[32mGET /google/callback?code=4/0AUJR-x5OOmfOUVc9pGTJ5YjpWv16Q9ecEYWM2A6rktmHvnyaiHzz_OCoFFSJjyI4jOQkcg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&hd=somaiya.edu&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:30:13,669 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:13] "GET /student HTTP/1.1" 200 -
+2025-06-09 14:30:13,853 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:30:22,641 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 14:30:22,663 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:22] "GET / HTTP/1.1" 200 -
+2025-06-09 14:30:22,829 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:30:22,837 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:22] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:30:24,851 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:24] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:30:31,943 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:30:32,295 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:30:32,301 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:30:32,489 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:30:32,503 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:32] "[32mGET /google/callback?code=4/0AUJR-x7mOeUwpR1HFPNZfZMMF3p2SWx3hhnFVe0Geld4Le2z6bleh4T4-ygXM4tKKPudMQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=1&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:30:32,537 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:32] "GET / HTTP/1.1" 200 -
+2025-06-09 14:30:32,666 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:30:32,669 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:30:32] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:34:28,262 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:34:28,629 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:34:32,736 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:34:32,872 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:34:32,912 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:34:38,896 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:34:39,064 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:34:42,520 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:34:42,618 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:34:42,655 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:34:49,657 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:34:49,815 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:34:53,434 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:34:53,522 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:34:53,562 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:35:26,643 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:35:26,769 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:35:30,143 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:35:30,233 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:35:30,271 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:37:17,466 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:37:17,625 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:37:21,973 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:37:22,123 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:37:22,177 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:37:28,320 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:37:28,578 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:37:35,595 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:37:35,747 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:37:35,811 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:37:41,127 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:37:41,364 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:37:46,062 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:37:46,198 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:37:46,272 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:37:52,060 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:37:52,213 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:37:55,854 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:37:55,928 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:37:55,961 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:38:06,917 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:38:07,045 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:38:10,140 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:38:10,215 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:38:10,248 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:38:46,471 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:38:46,597 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:38:49,783 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:38:49,857 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:38:49,892 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:40:51,319 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:40:51,488 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:40:55,956 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:40:56,093 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:40:56,130 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:41:07,793 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:41:07,937 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:41:11,657 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:41:11,759 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:41:11,805 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:42:05,227 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:42:05,424 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:42:08,826 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:42:08,917 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:42:08,954 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:42:10,684 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:10] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:42:10,973 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:10] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:42:18,931 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:42:19,343 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:42:19,356 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:42:19,662 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:42:19,665 - __main__ - INFO - Google login attempt - Email: dhruv.navadiya@somaiya.edu
+2025-06-09 14:42:20,003 - __main__ - INFO - New admin account created via Google: dhruv.navadiya@somaiya.edu
+2025-06-09 14:42:20,007 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:20] "[32mGET /google/callback?code=4/0AUJR-x6GnBRXhEbG5wxhpJvv8seZ0nVmI-w49VOq46ZRkq8UMBGcmfQH795yfNfAdc8Skg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&hd=somaiya.edu&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:42:20,073 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:20] "GET /admin HTTP/1.1" 200 -
+2025-06-09 14:42:20,950 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:42:24,701 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 14:42:24,795 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:24] "GET / HTTP/1.1" 200 -
+2025-06-09 14:42:25,027 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:42:25,051 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:25] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:42:31,418 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:42:31] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:43:53,050 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:43:53,408 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:43:53,413 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:43:53,698 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:43:53,702 - __main__ - INFO - Google login attempt - Email: shrinidhi.malli@somaiya.edu
+2025-06-09 14:43:54,082 - __main__ - INFO - New student account created via Google: shrinidhi.malli@somaiya.edu
+2025-06-09 14:43:54,086 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:43:54] "[32mGET /google/callback?code=4/0AUJR-x68wpGomitlo4lP1bxrqnNh3s_JLCakIcu6cQ_dA6jI-VOX9EVeD1uMkWgWWZwDSw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=somaiya.edu&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:43:54,163 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:43:54] "GET /student HTTP/1.1" 200 -
+2025-06-09 14:43:54,360 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:43:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:45:01,389 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:45:01,557 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:45:05,562 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:45:05,645 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:45:05,685 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:45:08,474 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 14:45:08,479 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 14:45:08,570 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:08] "GET / HTTP/1.1" 200 -
+2025-06-09 14:45:09,908 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:09] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:45:10,136 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:45:11,940 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:11] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 14:45:19,871 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 14:45:20,262 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 14:45:20,268 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 14:45:20,561 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 14:45:20,565 - __main__ - INFO - Google login attempt - Email: shrinidhi.malli@somaiya.edu
+2025-06-09 14:45:21,013 - __main__ - INFO - New admin account created via Google: shrinidhi.malli@somaiya.edu
+2025-06-09 14:45:21,015 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:21] "[32mGET /google/callback?code=4/0AUJR-x6SaPA_xwWjiTgRn-VBcxqJIXBOdamDra-vUK95C3oH4FhssUjl5_T091gHWQLxfA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=somaiya.edu&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 14:45:21,063 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:21] "GET /admin HTTP/1.1" 200 -
+2025-06-09 14:45:21,174 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:45:23,402 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 14:45:23,438 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:23] "GET / HTTP/1.1" 200 -
+2025-06-09 14:45:23,574 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:45:23,578 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:45:23] "[36mGET /static/css/login-style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:46:43,740 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:46:43,865 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:46:51,682 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:46:51,773 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:46:51,807 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:47:07,876 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 14:47:08,110 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 14:47:12,835 - __main__ - INFO - Database initialized successfully
+2025-06-09 14:47:12,978 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 14:47:13,034 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 14:47:14,904 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:47:14] "GET / HTTP/1.1" 200 -
+2025-06-09 14:47:15,989 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:47:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:47:16,030 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 14:47:16] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-06-09 15:06:53,322 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 15:06:53,779 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 15:06:57,032 - __main__ - INFO - Database initialized successfully
+2025-06-09 15:06:57,154 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 15:06:57,194 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 15:07:13,043 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\OneDrive\\Desktop\\My Projects\\Quizora-main\\app.py', reloading
+2025-06-09 15:07:13,170 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 15:07:16,240 - __main__ - INFO - Database initialized successfully
+2025-06-09 15:07:16,365 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 15:07:16,448 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 15:15:41,186 - __main__ - INFO - Database initialized successfully
+2025-06-09 15:15:41,346 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 15:15:41,346 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-09 15:15:41,352 - werkzeug - INFO -  * Restarting with stat
+2025-06-09 15:15:43,891 - __main__ - INFO - Database initialized successfully
+2025-06-09 15:15:43,955 - werkzeug - WARNING -  * Debugger is active!
+2025-06-09 15:15:43,990 - werkzeug - INFO -  * Debugger PIN: 916-881-520
+2025-06-09 15:15:46,064 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:15:46] "GET / HTTP/1.1" 200 -
+2025-06-09 15:15:47,266 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:15:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 15:15:47,294 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:15:47] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-06-09 15:20:28,035 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:28] "GET / HTTP/1.1" 200 -
+2025-06-09 15:20:28,166 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:28] "GET /static/css/login-style.css HTTP/1.1" 200 -
+2025-06-09 15:20:28,167 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 15:20:33,456 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:33] "[32mGET /google/login HTTP/1.1[0m" 302 -
+2025-06-09 15:20:45,541 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-06-09 15:20:45,971 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-06-09 15:20:45,979 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.googleapis.com:443
+2025-06-09 15:20:46,310 - urllib3.connectionpool - DEBUG - https://www.googleapis.com:443 "GET /oauth2/v2/userinfo HTTP/1.1" 200 None
+2025-06-09 15:20:46,315 - __main__ - INFO - Google login attempt - Email: dhruv.navadiya@somaiya.edu
+2025-06-09 15:20:46,542 - __main__ - INFO - New admin account created via Google: dhruv.navadiya@somaiya.edu
+2025-06-09 15:20:46,546 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:46] "[32mGET /google/callback?code=4/0AUJR-x6mI3rpTKss2OX9WjK5BBuFxSN_gnVzIsjJ7PURYX4tMJA8uyn8mf0VAisBnwd4dQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&hd=somaiya.edu&prompt=consent HTTP/1.1[0m" 302 -
+2025-06-09 15:20:46,597 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:46] "GET /admin HTTP/1.1" 200 -
+2025-06-09 15:20:46,719 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 15:20:48,928 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-09 15:20:48,954 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:48] "GET / HTTP/1.1" 200 -
+2025-06-09 15:20:49,049 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-09 15:20:49,051 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2025 15:20:49] "GET /static/css/login-style.css HTTP/1.1" 200 -

@@ -15,6 +15,8 @@ import secrets
 import re
 from typing import Optional, Dict, Any
 import json
+import requests
+from urllib.parse import urlencode
 
 # Configure logging
 logging.basicConfig(
@@ -32,6 +34,31 @@ app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=2)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
+# Rate limiting configuration
+RATE_LIMIT = {
+    'login': {'max_attempts': 5, 'window': 300},  # 5 attempts per 5 minutes
+    'test_submission': {'max_attempts': 3, 'window': 60}  # 3 attempts per minute
+}
+
+# Google OAuth Configuration
+GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID', "10741631728-acc151piih0epd1a6kdu4hb32biar5qq.apps.googleusercontent.com")
+GOOGLE_CLIENT_SECRET = os.environ.get('GOOGLE_CLIENT_SECRET', "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")
+GOOGLE_REDIRECT_URI = os.environ.get('GOOGLE_REDIRECT_URI', "http://localhost:5000/google/callback")
+GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
+GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token"
+GOOGLE_USERINFO_URL = "https://www.googleapis.com/oauth2/v2/userinfo"
+
+# Admin email configuration - Add admin emails here
+ADMIN_EMAILS = [
+    'admin@somaiya.edu',
+    'principal@somaiya.edu',
+    'director@somaiya.edu',
+    'dhruv.navadiya@somaiya.edu',
+    'purushottam.nar@somaiya.edu',
+    'shrinidhi.malli@somaiya.edu',# Add specific admin emails here
+    # Add more admin emails as needed
+]
+
 def generate_csrf_token() -> str:
     """Generate a new CSRF token."""
     if 'csrf_token' not in session:
@@ -40,12 +67,6 @@ def generate_csrf_token() -> str:
 
 # Register csrf_token function with Jinja2
 app.jinja_env.globals['csrf_token'] = generate_csrf_token
-
-# Rate limiting configuration
-RATE_LIMIT = {
-    'login': {'max_attempts': 5, 'window': 300},  # 5 attempts per 5 minutes
-    'test_submission': {'max_attempts': 3, 'window': 60}  # 3 attempts per minute
-}
 
 class DatabaseConnection:
     def __init__(self):
@@ -117,6 +138,62 @@ def validate_csrf_token(token: str) -> bool:
     if not token or 'csrf_token' not in session:
         return False
     return secrets.compare_digest(token, session['csrf_token'])
+
+def validate_somaiya_email(email: str) -> bool:
+    """Validate that email is from @somaiya.edu domain."""
+    return email.lower().endswith('@somaiya.edu')
+
+def is_admin_email(email: str) -> bool:
+    """Check if the email should be treated as an admin account."""
+    return email.lower() in [admin_email.lower() for admin_email in ADMIN_EMAILS]
+
+def determine_user_role(email: str) -> str:
+    """Determine if an email should be admin or student."""
+    if is_admin_email(email):
+        return 'admin'
+    else:
+        return 'student'  # All other @somaiya.edu emails become students
+
+def get_google_auth_url() -> str:
+    """Generate Google OAuth authorization URL."""
+    params = {
+        'client_id': GOOGLE_CLIENT_ID,
+        'redirect_uri': GOOGLE_REDIRECT_URI,
+        'scope': 'openid email profile',
+        'response_type': 'code',
+        'access_type': 'offline',
+        'prompt': 'consent'
+    }
+    return f"{GOOGLE_AUTH_URL}?{urlencode(params)}"
+
+def exchange_code_for_token(code: str) -> Optional[Dict[str, Any]]:
+    """Exchange authorization code for access token."""
+    try:
+        data = {
+            'client_id': GOOGLE_CLIENT_ID,
+            'client_secret': GOOGLE_CLIENT_SECRET,
+            'code': code,
+            'grant_type': 'authorization_code',
+            'redirect_uri': GOOGLE_REDIRECT_URI
+        }
+        
+        response = requests.post(GOOGLE_TOKEN_URL, data=data)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        logger.error(f"Error exchanging code for token: {e}")
+        return None
+
+def get_google_user_info(access_token: str) -> Optional[Dict[str, Any]]:
+    """Get user information from Google using access token."""
+    try:
+        headers = {'Authorization': f'Bearer {access_token}'}
+        response = requests.get(GOOGLE_USERINFO_URL, headers=headers)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        logger.error(f"Error getting user info from Google: {e}")
+        return None
 
 # Authentication decorators
 def login_required(f):
@@ -221,22 +298,20 @@ def login():
     
     email = request.form.get('email', '').strip()
     password = request.form.get('password', '').strip()
-    role = request.form.get('role', '').strip()
     
-    logger.info(f"Login attempt - Email: {email}, Role: {role}")
+    logger.info(f"Login attempt - Email: {email}")
     
     # Input validation
-    if not all([email, password, role]):
+    if not all([email, password]):
         flash('Please fill in all fields', 'danger')
-        return redirect(url_for('index'))
-    
-    if role not in ['admin', 'student']:
-        flash('Invalid role selected', 'danger')
         return redirect(url_for('index'))
     
     if not validate_email(email):
         flash('Invalid email format', 'danger')
         return redirect(url_for('index'))
+    
+    # Determine role based on email
+    role = determine_user_role(email)
     
     try:
         with DatabaseConnection() as conn:
@@ -292,6 +367,150 @@ def login():
     except Exception as e:
         logger.error(f"Login error: {e}")
         flash('An error occurred during login', 'danger')
+        return redirect(url_for('index'))
+
+@app.route('/google/login')
+def google_login():
+    """Redirect to Google OAuth authorization page."""
+    auth_url = get_google_auth_url()
+    return redirect(auth_url)
+
+@app.route('/google/callback')
+def google_callback():
+    """Handle Google OAuth callback."""
+    try:
+        # Get authorization code from callback
+        code = request.args.get('code')
+        if not code:
+            flash('Authorization failed. Please try again.', 'danger')
+            return redirect(url_for('index'))
+        
+        # Exchange code for access token
+        token_data = exchange_code_for_token(code)
+        if not token_data or 'access_token' not in token_data:
+            flash('Failed to authenticate with Google. Please try again.', 'danger')
+            return redirect(url_for('index'))
+        
+        # Get user information from Google
+        user_info = get_google_user_info(token_data['access_token'])
+        if not user_info:
+            flash('Failed to get user information from Google. Please try again.', 'danger')
+            return redirect(url_for('index'))
+        
+        email = user_info.get('email', '').strip()
+        name = user_info.get('name', '').strip()
+        
+        # Validate email domain
+        if not validate_somaiya_email(email):
+            flash('Only @somaiya.edu email addresses are allowed for Google Sign-In.', 'danger')
+            return redirect(url_for('index'))
+        
+        logger.info(f"Google login attempt - Email: {email}")
+        
+        # Check if user exists in database
+        with DatabaseConnection() as conn:
+            c = conn.cursor()
+            
+            # Check in both admin and student tables
+            c.execute("SELECT 'admin' as role, admin_id, admin_name, is_active FROM admins WHERE email = ?", (email,))
+            admin_user = c.fetchone()
+            
+            c.execute("SELECT 'student' as role, student_id, student_name, is_active FROM students WHERE email = ?", (email,))
+            student_user = c.fetchone()
+            
+            user = admin_user or student_user
+            
+            if not user:
+                # Determine if this should be an admin or student account
+                if is_admin_email(email):
+                    # Create new admin account for Google user
+                    c.execute("""
+                        INSERT INTO admins (admin_name, email, password, created_at)
+                        VALUES (?, ?, ?, datetime('now'))
+                    """, (name, email, generate_password_hash(secrets.token_urlsafe(32))))
+                    
+                    admin_id = c.lastrowid
+                    conn.commit()
+                    
+                    # Set session for new admin
+                    session.clear()
+                    session.update({
+                        'email': email,
+                        'role': 'admin',
+                        'admin_id': admin_id,
+                        'admin_name': name,
+                        'authenticated': True,
+                        'csrf_token': generate_csrf_token(),
+                        'google_login': True
+                    })
+                    session.permanent = True
+                    
+                    logger.info(f"New admin account created via Google: {email}")
+                    flash(f'Welcome {name}! Your admin account has been created successfully.', 'success')
+                    return redirect(url_for('admin'))
+                else:
+                    # Create new student account for Google user
+                    c.execute("""
+                        INSERT INTO students (student_name, email, password, created_at)
+                        VALUES (?, ?, ?, datetime('now'))
+                    """, (name, email, generate_password_hash(secrets.token_urlsafe(32))))
+                    
+                    student_id = c.lastrowid
+                    conn.commit()
+                    
+                    # Set session for new student
+                    session.clear()
+                    session.update({
+                        'email': email,
+                        'role': 'student',
+                        'student_id': student_id,
+                        'student_name': name,
+                        'authenticated': True,
+                        'csrf_token': generate_csrf_token(),
+                        'google_login': True
+                    })
+                    session.permanent = True
+                    
+                    logger.info(f"New student account created via Google: {email}")
+                    flash(f'Welcome {name}! Your account has been created successfully.', 'success')
+                    return redirect(url_for('student'))
+            
+            # User exists, check if account is active
+            if not user['is_active']:
+                logger.warning(f"Google login failed - Account deactivated: {email}")
+                flash('Account is deactivated. Please contact support.', 'danger')
+                return redirect(url_for('index'))
+            
+            # Update last login
+            table = 'admins' if user['role'] == 'admin' else 'students'
+            id_field = f"{user['role']}_id"
+            name_field = f"{user['role']}_name"
+            
+            c.execute(f"UPDATE {table} SET last_login = datetime('now') WHERE {id_field} = ?", 
+                     (user[id_field],))
+            
+            # Set session data
+            session.clear()
+            session.update({
+                'email': email,
+                'role': user['role'],
+                f"{user['role']}_id": user[id_field],
+                f"{user['role']}_name": user[name_field],
+                'authenticated': True,
+                'csrf_token': generate_csrf_token(),
+                'google_login': True
+            })
+            session.permanent = True
+            
+            conn.commit()
+            
+            logger.info(f"{user['role'].capitalize()} Google login successful: {email}")
+            flash(f'Welcome back {user[name_field]}!', 'success')
+            return redirect(url_for(user['role']))
+            
+    except Exception as e:
+        logger.error(f"Google callback error: {e}")
+        flash('An error occurred during Google authentication. Please try again.', 'danger')
         return redirect(url_for('index'))
 
 @app.route('/admin')
